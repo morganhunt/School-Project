@@ -1,0 +1,19 @@
+#header{
+	background-color:rgb(189, 205, 209)
+}
+
+#body{
+	background-color:rgb(126, 157, 57)
+}
+
+img{
+	width:300px;
+}
+
+.head{
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+h2{
+	font-family: "Lucida Console", Courier, monospace;
+}
