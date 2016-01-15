@@ -1,0 +1,29 @@
+<html>
+<body>
+<h1>Utah Cities</h1>
+<p>Enter a city</p>
+<input type="text" id="box" onkeyup="showHints(this.value)">
+<br>
+<p>Suggestions</p>
+<p id="sug"></p>
+<script>
+	var cities = [
+	"Alpine", "Altamont", "Alton", "Altonah", "American Fork", "Aneth", "Annabella", "Antimony", "Aurora", "Axtell", "Bear River City", "Beaver", "Beryl", "Bicknell", "Bingham Canyon", "Blanding", "Bluebell", "Bluff", "Bonanza", "Boulder", "Bountiful", "Brian Head", "Brigham City", "Bryce", "Bryce Canyon"
+	];  
+	function showHints(str)
+	{
+		var list="<ul>"; 
+		for(i=0; i<cities.length; i++)
+		{
+			if(cities[i].indexOf(str)===0)
+	    	{
+	    	list = list + "<li>"+cities[i]+"</li>";
+	    	}
+		}
+		var list = list + "</ul>";
+		console.log(list);
+		document.getElementById("sug").innerHTML=list;
+	}
+</script>
+</body>
+</html>
